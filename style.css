@@ -262,7 +262,6 @@ highlight-card p {
 .skill-card {
     background-color: var(--card-color);
     padding: 30px;
-    border-raduis: 12px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: 0.3s ease;
 }
@@ -277,7 +276,6 @@ highlight-card p {
     color: #b9a0ff;
     background-color: rgba(147, 51, 234, 0.12);
     padding: 6px 12px;
-    border-raduis: 20px;
 }
 
 /* hover effect */
@@ -405,4 +403,207 @@ highlight-card p {
 
 .project-link:hover {
     color: var(--secondary-color);
+}
+/* =========================
+   EDUCATION SECTION
+========================= */
+
+.education {
+    background-color: var(--bg-color);
+}
+
+/* EDUCATION CONTAINER */
+
+.education-container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* EDUCATION CARD */
+
+.education-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--card-color);
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(65, 105, 255, 0.1);
+}
+
+/* EDUCATION ICON */
+
+.education-icon {
+    min-width: 110px;
+    height: 110px;
+    border-radius: 12px;
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--secondary-color)
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* EDUCATION DETAILS */
+
+.education-content h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.education-content h4 {
+    color: var(--primary-color);
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.education-content p {
+    color: var(--muted-color);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+/* EDUCATION STATUS */
+
+.education-status {
+    display: inline-block;
+    font-size: 11px;
+    color: #b9a0ff;
+    background-color: rgba(147, 51, 234, 0.12);
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact {
+    background-color: #11111d;
+}
+
+/* CONTACT INTRODUCTION */
+
+.contact .section-heading > p:last-child {
+    color: var(--muted-color);
+    font-size: 15px;
+    max-width: 600px;
+    margin: 15px auto 0;
+}
+
+/* CONTACT CONTAINER */
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+/* CONTACT CARDS */
+
+.contact-item {
+    background-color: var(--card-color);
+    padding: 35px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(65, 105, 255, 0.1);
+}
+
+/* CONTACT TEXT */
+
+.contact-item h3 {
+    font-size: 22px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: var(--muted-color);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* CONTACT LINK */
+
+.contact-link {
+    display: inline-block;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--secondary-color);
+}
+/* FOOTER */
+.footer {
+    background-color: var(--bg-color);
+    padding: 50px 10% 20px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 35px;
+}
+
+.footer-brand p {
+    color: var(--muted-color);
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: var(--muted-color);
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: var(--muted-color);
+    font-size: 12px;
 }
