@@ -34,3 +34,8 @@ const observer = new IntersectionObserver(function (entries) {
 revealElements.forEach(function (element) {
     observer.observe(element);
 });
+
+// dynamic copyright year
+const currentYear = new Date().getFullYear();
+
+document.getElementById("current-year").textContent = currentYear;
